@@ -1,0 +1,12 @@
+<div
+  class="drawer-container"
+  [@drawerComponent]="isOpen ? 'opened' : 'default'"
+>
+  <header class="header">
+    <h5>Responses</h5>
+    <button class="close" (click)="close()">X</button>
+  </header>
+  <div class="body">
+    <ng-content select="[innerContent]"></ng-content>
+  </div>
+</div>

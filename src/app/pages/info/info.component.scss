@@ -1,0 +1,33 @@
+.info-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: black;
+  color: white;
+
+  .page-info,
+  .operations {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+  }
+
+  .page-info {
+    span {
+      text-align: justify;
+    }
+  }
+
+  .operations {
+    justify-content: center;
+    .open-drawer {
+      background-color: #488adc;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      width: 110px;
+      height: 40px;
+      cursor: pointer;
+    }
+  }
+}

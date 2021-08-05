@@ -1,0 +1,8 @@
+<app-drawer [isOpen]="isDrawerOpen" (closed)="isDrawerOpen = false">
+  <div class="inner-content" innerContent>
+    <span>teste</span>
+
+    <a (click)="openDrawerTwo()">Open</a>
+  </div>
+</app-drawer>
+<app-inner-info-two [isDrawerOpen]="isDrawerOpenTwo"></app-inner-info-two>
